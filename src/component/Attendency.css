@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.attendance-container {
+  width: 420px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  padding: 35px;
+  text-align: center;
+  backdrop-filter: blur(8px);
+}
+
+.attendance-container h2 {
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.attendance-table {
+  margin-bottom: 25px;
+}
+
+.attendance-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0;
+  background: #f8f9fa;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.day-label {
+  font-weight: 500;
+  color: #444;
+  width: 100px;
+  text-align: left;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn.present {
+  background-color: #c8f7c5;
+  color: #2e8b57;
+}
+
+.btn.absent {
+  background-color: #f8d7da;
+  color: #b71c1c;
+}
+
+.btn.present.active {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn.absent.active {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.btn-calc {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-calc:hover {
+  background-color: #3578d4;
+}
